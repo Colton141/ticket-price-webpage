@@ -12,23 +12,65 @@
     <div class="container">
       <h1>Ticket Buyer!</h1>
       <form id="ticket-buying">
-        <input type="radio" id="movie1" name="spider-man" value="3">
-        <label for="huey">Spider Man</label>
-        <input type="radio" id="movie1" name="spider-man" value="3">
-        <label for="huey"></label>
-        <input type="radio" id="movie1" name="spider-man" value="3">
-        <label for="huey">Spider Man</label>
-        <input type="radio" id="movie1" name="spider-man" value="3">
-        <label for="huey">Spider Man</label>
-        <input type="radio" id="movie1" name="spider-man" value="3">
-        <label for="huey">Spider Man</label>
-        <input type="radio" id="movie1" name="spider-man" value="3">
-        <label for="huey">Spider Man</label>
+        <h2>Movies</h2>
+        <div class="form-group">
+          <div class="radio">
+            <label>
+              <input type="radio" name="movie" value="3" checked>
+              Spider Man
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="movie" value="3">
+              HellBoy
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="movie" value="3">
+              Avengers
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="movie" value="1">
+              Call Me By Your Name
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="movie" value="1">
+              The Big Sick
+            </label>
+          </div>
+        </div>
+        <div class="form-group">
+          <div>
+            <h2>Age</h2>
+            <label for="age">Enter In Your Age</label>
+            <input id="age" type="number" name="age" value="">
+          </div>
+        </div>
+        <div class="form-group">
+          <h2>Times</h2>
+          <select class="form-control" id="movie-times">
+            <option value="1">10:10am</option>
+            <option value="1">1:20pm</option>
+            <option value="2">4:00pm</option>
+            <option value="3">7:15pm</option>
+            <option value="3">11:45pm</option>
+          </select>
+        </div>
 
-
+        <button type="submit" class="btn btn-secondary">Get Tickets</button>
       </form>
 
+      <div id="show-ticket">
+        <p class="option1">Ticket Price: $17.75 <span class="movie-name"></span></p>
+        <p class="option2">Ticket Price: $15.25 <span class="age"></span></p>
+        <p class="option3">Ticket Price: $12.05 <span class="movie-time"></span></p>
+      </div>
     </div>
-
   </body>
 </html>
